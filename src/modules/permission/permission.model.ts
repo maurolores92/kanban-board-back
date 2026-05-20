@@ -25,5 +25,5 @@ export class Permission extends Model {
   declare resource: string; // Ruta o identificador del recurso
 
   @BelongsToMany(() => Role, () => RolePermission)
-  roles: Role[];
+  roles?: Role[];
 }
